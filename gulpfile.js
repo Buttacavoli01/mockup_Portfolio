@@ -102,6 +102,7 @@ gulp.task('serve', gulp.series('styles', function() {
   browserSync.init({
     server: {
       baseDir: 'app',
+      index: 'index.html'
     },
     port: 3000
   });

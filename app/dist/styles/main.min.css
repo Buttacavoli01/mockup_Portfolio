@@ -1,0 +1,1 @@
+root{box-sizing:border-box}*,:after,:before{box-sizing:inherit}nav{display:flex;flex-direction:row;justify-content:space-around;list-style-type:none;width:100%}nav a{text-decoration:none}
