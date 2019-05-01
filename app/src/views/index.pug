@@ -5,34 +5,21 @@ html(lang="en",dir="ltr")
     meta(name="viewport", content="width=device-width, initial-scale=1")
     title Mock-up Portfolio
     //link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css")
+    link(
+    rel="stylesheet",
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css")
     link(rel="stylesheet", href="dist/styles/main.min.css")
     
 
   body
-    main
-      nav#navbar
-        a.nav-link(href="#welcome-section") about
-        a.nav-link(href="#projects") projects
-        a.nav-link(href="#contact") contact
-      section#welcome-section
-        h1 Hey&#44; I&#39;m Andrew&#46;
-        h5 a web developer&#46;
-      section#projects
-        h2 projects
-        .project-tile
-          a(href="link-to-project")
-        .project-tile
-          a(href="link-to-project")
-        .project-tile
-          a(href="link-to-project")
-        .project-tile
-          a(href="link-to-project")
-        .project-tile
-          a(href="link-to-project")
-        .project-tile
-          a(href="link-to-project")
-      section#contact
-        h2 contact me
+    include nav.pug
+  
+    section#welcome-section
+      h1 Hey&#44; I&#39;m Andrew&#46;
+      h5 a web developer&#46;
+    
+    include projects.pug
+    include contact.pug
         
     //script(src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js")
     //script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js") 
