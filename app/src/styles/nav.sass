@@ -1,9 +1,21 @@
-ul
+@import 'main'
+
+.nav
   display: flex
   flex-direction: row
   justify-content: space-around
-  list-style-type: none
+  align-items: center
+  position: fixed
+  height: 10%
+  top: -20px
+  right: 0
   width: 100%
+  font-size: 1.2em
+  z-index: 1
+  background-color: $main
+
+ul
+  list-style-type: none
 
   a
     text-decoration: none
