@@ -13,14 +13,10 @@ html(lang="en",dir="ltr")
 
   body
     include nav.pug
-  
-    section#welcome-section.welcome
-      h1 Hey&#44; I&#39;m Andrew&#46;
-      h4 a web developer&#46;
-    
+    include about.pug
     include projects.pug
     include contact.pug
-        
+    include footer.pug    
     //script(src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js")
     //script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js") 
     //script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js")
