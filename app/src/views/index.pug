@@ -5,18 +5,22 @@ html(lang="en",dir="ltr")
     meta(name="viewport", content="width=device-width, initial-scale=1")
     title Mock-up Portfolio
     //link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css")
-    link(
-    rel="stylesheet",
+    link(rel="stylesheet",
     href="https://use.fontawesome.com/releases/v5.8.1/css/all.css")
     link(rel="stylesheet", href="dist/styles/main.min.css")
     
 
   body
-    include nav.pug
-    include about.pug
-    include projects.pug
-    include contact.pug
-    include footer.pug    
+    nav#navbar
+      include nav.pug
+    section#welcome-section
+      include about.pug
+    section#projects
+      include projects.pug
+    section#contact
+      include contact.pug
+    footer.footer
+      include footer.pug    
     //script(src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js")
     //script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js") 
     //script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js")
