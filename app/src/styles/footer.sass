@@ -1,2 +1,19 @@
-.footer
+.contact-section
   grid-area: footer
+
+.contact-grid
+  display: grid
+  font-size: 1.875em
+  grid: repeat(2, 2em) / repeat(2, 2em)
+  justify-content: center
+
+  .contact-item
+    height: 40px
+    text-align: center
+    width: 40px
+
+    i
+      transition: all .5s
+
+      &:hover
+        transform: scale(1.5)
