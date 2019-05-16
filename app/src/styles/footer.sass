@@ -2,9 +2,8 @@
   grid-area: footer
 
 .contact-grid
-  display: grid
-  font-size: 1.875em
-  grid: repeat(2, 2em) / repeat(2, 2em)
+  display: flex
+  font-size: 1.5em
   justify-content: center
 
   .contact-item
@@ -12,7 +11,14 @@
     text-align: center
     width: 40px
 
-    i
+    a
+      &:visited
+        color: black
+
+      &:active
+        color: red
+
+    .fab
       transition: all .5s
 
       &:hover
