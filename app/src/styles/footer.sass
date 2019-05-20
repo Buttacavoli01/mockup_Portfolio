@@ -1,3 +1,5 @@
+@import 'main'
+
 .contact-section
   grid-area: footer
 
@@ -12,13 +14,16 @@
     width: 40px
 
     a
+      color: $white
+
       &:visited
-        color: black
+        color: $black
 
       &:active
-        color: red
+        color: $red
 
     .fab
+      color: $white
       transition: all .5s
 
       &:hover

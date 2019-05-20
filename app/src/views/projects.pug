@@ -1,10 +1,14 @@
 .projects
-  h2 projects
   -var path = "dist/assets/images/";
   .project-tile
     figure
       img(src=path + "bob.png" )
       figcaption bob marley tribute
+    a(href="link-to-project")
+  .project-tile
+    figure
+      img(src=path + "tictactoe.png")
+      figcaption tic tac toe
     a(href="link-to-project")
   .project-tile
     figure
@@ -26,8 +30,4 @@
       img(src=path + "retro.png")
       figcaption arcade clone
     a(href="link-to-project")
-  .project-tile
-    figure
-      img(src=path + "tictactoe.png")
-      figcaption tic tac toe
-    a(href="link-to-project")
+  
