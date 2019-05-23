@@ -1,0 +1,27 @@
+doctype html
+html(lang="en",dir="ltr")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    title Mock-up Portfolio
+    link(href="https://fonts.googleapis.com/css?family=Fredericka+the+Great", rel="stylesheet")
+    //link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css")
+    link(rel="stylesheet",
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css")
+    link(rel="stylesheet", href="dist/styles/main.min.css")
+    
+
+  body
+    nav#navbar
+      include nav.pug
+    section#welcome-section
+      include about.pug
+    section#projects
+      include projects.pug
+    footer.footer#contact
+      include footer.pug    
+    //script(src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js")
+    //script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js") 
+    //script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js")
+    //script(src="dist/scripts/main.min.js")
+    script(src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js")

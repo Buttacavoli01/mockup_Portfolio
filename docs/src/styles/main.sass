@@ -1,0 +1,22 @@
+$white: #fff
+$black: #000
+$red: #f00
+$trblk: rgba(0, 0, 0, .9)
+
+root
+  box-sizing: border-box
+
+*,
+*::before,
+*::after
+  box-sizing: inherit
+
+body
+  background: url('/dist/assets/images/bg.png')
+  color: $white
+  display: grid
+  font-family: 'Fredericka the Great', cursive
+  font-weight: 500
+  grid-template-areas: 'nav' 'about' 'projects' 'contact' 'footer'
+  grid-template-columns: 1fr
+  justify-items: center
