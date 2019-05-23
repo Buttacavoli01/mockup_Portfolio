@@ -1,1 +1,137 @@
-#welcome-section{height:100vh}.welcome{grid-area:b;min-height:55vh;padding-top:45vh;text-align:center;top:0}.contact-section{grid-area:e}.contact-grid{display:flex;font-size:1.5em;justify-content:center}.contact-grid .contact-item{height:40px;text-align:center;width:40px}.contact-grid .contact-item a{color:#fff}.contact-grid .contact-item a:visited{color:#000}.contact-grid .contact-item .fab{color:#fff;transition:all .5s}.contact-grid .contact-item .fab:hover{transform:scale(1.5)}.contact-grid .contact-item .fab:active{color:red}root{box-sizing:border-box}*,:after,:before{box-sizing:inherit}body{background:url(/dist/assets/images/bg.png);color:#fff;display:grid;font-family:Fredericka the Great,cursive;font-weight:500;grid-template-areas:"a" "b" "c" "d" "e";grid-template-columns:1fr;justify-items:center}nav{background-color:rgba(0,0,0,.9);font-size:1.2em;grid-area:a;position:fixed;right:0;top:0;width:100%}nav .nav{display:flex;flex-direction:row;justify-content:space-around;align-content:flex-start;width:90%;z-index:1}nav ul{list-style-type:none}nav ul .nav-link{color:red;cursor:pointer;text-decoration:none}.projects{display:grid;grid-area:c;margin-bottom:3em}figure{text-align:center;text-transform:capitalize}figure img{display:block;height:auto;max-width:100%}@media (min-width:768px){figure img{margin:0 auto;max-width:60%}}@media (min-width:1024px){.projects{grid-template-columns:repeat(2,500px)}}@media (min-width:1440px){.projects{grid-template-columns:repeat(3,400px);grid-template-rows:repeat(2,300px)}.projects figure img{max-width:80%}}
+#welcome-section {
+  height: 100vh
+}
+
+.welcome {
+  grid-area: b;
+  min-height: 55vh;
+  padding-top: 45vh;
+  text-align: center;
+  top: 0
+}
+
+.contact-section {
+  grid-area: e
+}
+
+.contact-grid {
+  display: flex;
+  font-size: 1.5em;
+  justify-content: center
+}
+
+.contact-grid .contact-item {
+  height: 40px;
+  text-align: center;
+  width: 40px
+}
+
+.contact-grid .contact-item a {
+  color: #fff
+}
+
+.contact-grid .contact-item a:visited {
+  color: #000
+}
+
+.contact-grid .contact-item .fab {
+  color: #fff;
+  transition: all .5s
+}
+
+.contact-grid .contact-item .fab:hover {
+  transform: scale(1.5)
+}
+
+.contact-grid .contact-item .fab:active {
+  color: red
+}
+
+root {
+  box-sizing: border-box
+}
+
+*, :after, :before {
+  box-sizing: inherit
+}
+
+body {
+  background: url('../assets/images/bg.png');
+  color: #fff;
+  display: grid;
+  font-family: Fredericka the Great, cursive;
+  font-weight: 500;
+  grid-template-areas: "a""b""c""d""e";
+  grid-template-columns: 1fr;
+  justify-items: center
+}
+
+nav {
+  background-color: rgba(0, 0, 0, .9);
+  font-size: 1.2em;
+  grid-area: a;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%
+}
+
+nav .nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: flex-start;
+  width: 90%;
+  z-index: 1
+}
+
+nav ul {
+  list-style-type: none
+}
+
+nav ul .nav-link {
+  color: red;
+  cursor: pointer;
+  text-decoration: none
+}
+
+.projects {
+  display: grid;
+  grid-area: c;
+  margin-bottom: 3em
+}
+
+figure {
+  text-align: center;
+  text-transform: capitalize
+}
+
+figure img {
+  display: block;
+  height: auto;
+  max-width: 100%
+}
+
+@media (min-width:768px) {
+  figure img {
+    margin: 0 auto;
+    max-width: 60%
+  }
+}
+
+@media (min-width:1024px) {
+  .projects {
+    grid-template-columns: repeat(2, 500px)
+  }
+}
+
+@media (min-width:1440px) {
+  .projects {
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(2, 300px)
+  }
+
+  .projects figure img {
+    max-width: 80%
+  }
+}
